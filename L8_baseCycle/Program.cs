@@ -10,16 +10,16 @@ namespace L8_baseCycle
     {
         static void Main(string[] args)
         {
-            int count;
+            int numberOfMessages;
             string userMessage;
 
             Console.Write("Напишите сообщение для вывода: ");
             userMessage = Console.ReadLine();
             Console.Write("Сколько раз вывести воше сообщение?: ");
-            count = Convert.ToInt32(Console.ReadLine());
+            numberOfMessages = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
 
-            for (int i = 1; i <= count; i++)
+            for (int i = 1; i <= numberOfMessages; i++)
             {
                 Console.WriteLine(i + " " + userMessage);
             }
